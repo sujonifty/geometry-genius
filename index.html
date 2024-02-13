@@ -15,22 +15,78 @@
         <header>
 
         </header>
-        <main>
+        <main class="container  lg:w-[94%] mx-auto">
             <!-- main cointainer -->
-            <div>
+            <div class="flex  gap-5 my-6 mx-auto">
                 <!-- cards cointainer -->
-                <div>
+                <div class="flex-1 w-3/4 gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- triangle cards -->
+                    <div class="card w-full bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/triangle.png" alt="Triangle" /></figure>
+                        <div class="card-body gap-y-3">
+                          <h2 class="text-3xl">Triangle</h2>
+                          <p>Area (A) = 0.5 * b * h</p>
+                          <div class="flex justify-center items-center gap-x-2">
+                            <input id="tri-base" class="w-24 bg-gray-200 p-2 rounded-md" type="text" placeholder="b"> <span>cm</span>
+                          <input id="tri-height" class="w-24 bg-gray-200 p-2 rounded-md" type="text" placeholder="h"> <span>cm</span>
+                          </div>
+                          <div>
+                            <p class="text-2xl">Area: <span id="tri-area"></span> <span>cm</span><span><sup>2</sup></span></p>
+                          </div>
+                          <div class="card-actions justify-end">
+                            <button id="tri-btn" class=" w-full btn btn-primary">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- rectangle cards -->
+                    <div class="card w-full bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/rectangle.png" alt="rectangle" /></figure>
+                        <div class="card-body gap-y-3">
+                          <h2 class="text-3xl">Rectangle</h2>
+                          <p>Area (A) = w * l</p>
+                          <div class="flex justify-center items-center gap-x-2">
+                            <input id="tri-base" class="w-24 bg-gray-200 p-2 rounded-md" type="text" placeholder="b"> <span>cm</span>
+                          <input id="tri-height" class="w-24 bg-gray-200 p-2 rounded-md" type="text" placeholder="h"> <span>cm</span>
+                          </div>
+                          <div>
+                            <p class="text-2xl">Area: <span id="tri-area"></span> <span>cm</span><span><sup>2</sup></span></p>
+                          </div>
+                          <div class="card-actions justify-end">
+                            <button id="tri-btn" class=" w-full btn btn-primary">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- parallelogram cards -->
+                    <div class="card w-full bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/parallelogram.png" alt="parallelogram" /></figure>
+                        <div class="card-body gap-y-3">
+                          <h2 class="text-3xl">Parallelogram</h2>
+                          <p>Area (A) = b * h</p>
+                          <div class="flex justify-center items-center gap-x-2">
+                            <input id="tri-base" class="w-24 bg-gray-200 p-2 rounded-md" type="text" placeholder="b"> <span>cm</span>
+                          <input id="tri-height" class="w-24 bg-gray-200 p-2 rounded-md" type="text" placeholder="h"> <span>cm</span>
+                          </div>
+                          <div>
+                            <p class="text-2xl">Area: <span id="tri-area"></span> <span>cm</span><span><sup>2</sup></span></p>
+                          </div>
+                          <div class="card-actions justify-end">
+                            <button id="tri-btn" class=" w-full btn btn-primary">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                </div >
 
-                </div>
                 <!-- calculation container -->
-                <div>
-                    
+                <div class="bg-slate-100 p-3 border-2 border-gray-700 rounded-md ">
+                    <h3 class="text-3xl">Area calculation</h3>
                 </div>
             </div>
         </main>
         <footer>
 
         </footer>
+
+        <script src="js/calculate.js"></script>
 </body>
 
 </html>
